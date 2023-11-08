@@ -24,7 +24,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
         android:text="@string/name"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -37,7 +36,6 @@
         android:ems="10"
         android:inputType="text"
         android:text=""
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
@@ -48,7 +46,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="@string/dob"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
@@ -70,7 +67,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="@string/email"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/date_picker" />
 
@@ -83,29 +79,8 @@
         android:ems="10"
         android:inputType="text"
         android:text=""
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
-
-    <Button
-        android:id="@+id/saveDetailsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Save Details"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
-
-    <Button
-        android:id="@+id/viewDetailsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="28dp"
-        android:text="View Details"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -120,38 +95,57 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:tag="hothoang" />
+            android:tag="profile1" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="63dp"
-            app:srcCompat="@drawable/hothoang" />
+            app:srcCompat="@drawable/profile1" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:tag="thodai" />
+            android:tag="profile2" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            app:srcCompat="@drawable/thodai" />
+            app:srcCompat="@drawable/profile2" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:tag="tiendinh" />
+            android:tag="profile3" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="62dp"
-            app:srcCompat="@drawable/tiendinh" />
-
+            app:srcCompat="@drawable/profile3" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/saveDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/viewDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:text="List"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

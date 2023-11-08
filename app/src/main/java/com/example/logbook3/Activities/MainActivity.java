@@ -139,12 +139,12 @@ public class MainActivity extends AppCompatActivity {
         user.email = email;
         user.image = imageValue;
 
-        appDatabase.userDao().insertUser(user);
+        appDatabase.userDao().addUser(user);
 
         new AlertDialog.Builder(this)
                 .setTitle("Success")
                 .setMessage(
-                        "New Contact is saved"
+                        "New User is saved"
                 )
                 .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                     @Override

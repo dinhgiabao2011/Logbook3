@@ -12,9 +12,9 @@ import java.util.List;
 @Dao
 public interface UserDao {
     @Insert
-    Long insertUser(User user);
+    Long addUser(User user);
     @Query("SELECT * FROM users ORDER BY name")
     List<User> getAllUsers();
-    @Query("SELECT * FROM users where user_id = :id")
-    User getUserDetail(long id);
+    @Delete
+    void deleteUser(User user);
 }

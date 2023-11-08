@@ -14,17 +14,17 @@ import com.example.logbook3.R;
 
 import java.util.List;
 
-public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactViewHolder> {
+public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ContactViewHolder> {
     private List<User> users;
     private OnDeleteClickListener onDeleteClickListener;
     public interface OnDeleteClickListener {
         void onDeleteClick(User person);
     }
-    public ContactAdapter(List<User> users, OnDeleteClickListener onDeleteClickListener) {
+    public UserAdapter(List<User> users, OnDeleteClickListener onDeleteClickListener) {
         this.users = users;
         this.onDeleteClickListener = onDeleteClickListener;
     }
-    public ContactAdapter(List<User> users) {
+    public UserAdapter(List<User> users) {
         this.users = users;
     }
 
